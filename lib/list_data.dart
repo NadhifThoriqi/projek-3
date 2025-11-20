@@ -108,7 +108,7 @@ class ListDataPage extends StatelessWidget {
     'Matematika',
     'Fisika',
     'Jurusan Farmasi',
-    'Jurusan Teknik'
+    'Jurusan Teknik',
   ];
 
   @override
@@ -131,9 +131,7 @@ class ListDataPage extends StatelessWidget {
               );
             },
             trailing: Column(
-              children: [
-                ElevatedButton(onPressed: () {}, child: Text("Hapus")),
-              ],
+              children: [ElevatedButton(onPressed: () {}, child: Text(" "))],
             ),
           );
         },
