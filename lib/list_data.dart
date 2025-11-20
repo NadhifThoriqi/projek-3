@@ -108,22 +108,7 @@ class ListDataPage extends StatelessWidget {
     'Matematika',
     'Fisika',
     'Jurusan Farmasi',
-    'Jurusan Teknik',
-    'Desain Komunikasi Visual',
-    'Hubungan Internasional',
-    'Teknik Informatika',
-    'Sistem Informasi',
-    'Teknik Mesin',
-    'Ilmu Hukum',
-    'Manajemen',
-    'Teknik Sipil',
-    'Kedokteran',
-    'Akuntansi',
-    'Psikologi',
-    'Matematika',
-    'Fisika',
-    'Jurusan Farmasi',
-    'Jurusan Teknik',
+    'Jurusan Teknik'
   ];
 
   @override
