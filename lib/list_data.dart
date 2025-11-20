@@ -123,11 +123,14 @@ class ListDataPage extends StatelessWidget {
             title: Text(dataProdi[index]),
             subtitle: Text('Subtitle untuk ${dataProdi[index]}'),
             onTap: () {
-              ScaffoldMessenger.of(constext).showSnackBar(
-                SnackBar(
-                  content: Text(dataProdi[index]),
-                  duration: Duration(milliseconds: 700),
-                ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => ListDataPage()),
+                  );
+                },
+                child: Text("Menu List Data"),
               );
             },
             trailing: Column(
