@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // stl
-class Detail extends StatelessWidget {
-  const Detail({super.key, required this.prodi, });
+class DetailPage extends StatelessWidget {
+  const DetailPage({super.key, required this.prodi, });
 
   final String prodi;
 

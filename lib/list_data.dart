@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts/detail_page.dart';
 
 class ListDataPage extends StatelessWidget {
   ListDataPage({super.key});
@@ -123,19 +124,13 @@ class ListDataPage extends StatelessWidget {
             title: Text(dataProdi[index]),
             subtitle: Text('Subtitle untuk ${dataProdi[index]}'),
             onTap: () {
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => ListDataPage()),
-                  );
-                },
-                child: Text("Menu List Data"),
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => DetailPage(prodi: dataProdi[index]),
+                ),
               );
             },
-            trailing: Column(
-              children: [ElevatedButton(onPressed: () {}, child: Text(" "))],
-            ),
           );
         },
       ),
