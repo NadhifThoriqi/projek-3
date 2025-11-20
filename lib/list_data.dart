@@ -137,7 +137,19 @@ class ListDataPage extends StatelessWidget {
             leading: CircleAvatar(child: Text((index + 1).toString())),
             title: Text(dataProdi[index]),
             subtitle: Text('Subtitle untuk ${dataProdi[index]}'),
-            onTap: ,
+            onTap: () {
+              ScaffoldMessenger.of(constext).showSnackBar(
+                SnackBar(
+                  content: Text(dataProdi[index]),
+                  duration: Duration(milliseconds: 700),
+                ),
+              );
+            },
+            trailing: Column(
+              children: [
+                ElevatedButton(onPressed: () {}, child: Text("Hapus")),
+              ],
+            ),
           );
         },
       ),
