@@ -120,7 +120,9 @@ class ListDataPage extends StatelessWidget {
         itemCount: dataProdi.length,
         itemBuilder: (constext, index) {
           return ListTile(
-            leading: CircleAvatar(child: Text((index + 1).toString())),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/download.png"),
+            ),
             title: Text(dataProdi[index]),
             subtitle: Text('Subtitle untuk ${dataProdi[index]}'),
             onTap: () {
